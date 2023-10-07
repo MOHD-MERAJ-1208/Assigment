@@ -1,0 +1,27 @@
+
+.Container{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 200px 1fr 200px ;
+}
+.box{
+    background-color: rgb(28, 79, 82);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box1{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#box5{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

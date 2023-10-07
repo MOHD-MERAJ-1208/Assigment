@@ -1,3 +1,11 @@
+.container{
+  background-color: dodgerblue;
+}
+#box1{
+width: 100px;
+height: 100px;
+background-color: #255f5a;
+}
 
 *{
     color:#f1f1f1;
@@ -46,3 +54,33 @@ h3{
     background-color: rgb(165, 99, 99);
     font-size: 30px;
   }
+  .btn{
+    margin-top: 10px;
+    background-color: #1e867d;
+  }  
+  p{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+ a{
+    text-decoration: none;
+    color: rgb(244, 245, 247);
+    transition: color 0.3s;
+ }
+  a:hover{
+    color: #053e38;
+  }
+  a:active{
+    color: rgb(2, 27, 28);
+  }
+  .before{
+    margin-top: 10px;
+    background-color: #42634c;
+  }  
+.p1::before{
+    content: "@@@";
+color: rgb(251, 67, 6);
+}.p2::after{
+    content: "###";
+color: rgb(1, 17, 62);
+}
