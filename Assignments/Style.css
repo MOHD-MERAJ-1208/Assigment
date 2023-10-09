@@ -161,31 +161,31 @@
 } */
 
 .Container{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(248, 248, 248);
     height: 100vh;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(8, 1fr) ;
-    grid-template-rows: repeat(11, 1fr) ;
+    grid-template-columns: repeat(8, auto) ;
+    grid-template-rows: repeat(11, auto) ;
     grid-template-areas: 
     "Stage-0 Stage-1 Stage-2 Stage-3 Stage-4 Stage-5 Stage-6 Stage-7"
     "time-1 talk-1 talk-1 talk-4 talk-5 talk-5 talk-9 talk-9"
-    "time-2 talk-1 talk-1 talk-4 break break talk-9 talk-9"
+    "time-2 talk-1 talk-1 talk-4 break1 break1 talk-9 talk-9"
     "time-3 talk-1 talk-1 talk-4 talk-6 talk-6 talk-9 talk-9"
-    "time-4 break break talk-4 talk-6 talk-6 talk-9 talk-9"
+    "time-4 break2 break2 talk-4 talk-6 talk-6 talk-9 talk-9"
     "time-5 talk-2 talk-3 talk-3 talk-6 talk-6 talk-9 talk-9"
     "time-6 talk-2 talk-3 talk-3 talk-6 talk-6 talk-9 talk-9"
-    "time-7 break break break break break break break"
-    "time-8 talk-7 talk-7 break break break talk-10 talk-10"
+    "time-7 break3 break3 break3 break3 break3 break3 break3"
+    "time-8 talk-7 talk-7 no no no talk-10 talk-10"
     "time-9 talk-7 talk-7 talk-8 talk-8 talk-8 talk-10 talk-10"
-    "time-10 talk-7 talk-7 talk-8 talk-8 talk-8 talk-10 talk-10";  
+    "time-10 talk-7 talk-7 talk-8 talk-8 talk-8 talk-10 talk-10"
 }
 .box{
     
     background-color: rgb(208, 118, 82);
     border-radius: 4px;
     color: white;
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
   
@@ -266,7 +266,7 @@
 }
 
 #talk-1{
-    background-color: rgb(80, 193, 163);
+    background-color: rgb(103, 205, 212);
     grid-area: talk-1;
 }
 #talk-2{
@@ -298,14 +298,22 @@
     grid-area: talk-8;
 }
 #talk-9{
-    background-color: rgb(80, 193, 163);
+    background-color: rgb(223, 228, 158);
     grid-area: talk-9;
 }
 #talk-10{
-    background-color: rgb(80, 193, 163);
+    background-color: rgb(223, 228, 158);
     grid-area: talk-10;
 }
-#break{
+#break1{
     background-color: rgb(80, 193, 163);
-    grid-area: break;
+    grid-area: break1;
+}
+#break2{
+    background-color: rgb(80, 193, 163);
+    grid-area: break2;
+}
+#break3{
+    background-color: rgb(80, 193, 163);
+    grid-area: break3;
 }
