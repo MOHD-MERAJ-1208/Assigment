@@ -1,5 +1,5 @@
 
-.Container{
+/* .Container{
     background-color: rgb(255, 255, 255);
     height: 100vh;
     display: grid;
@@ -24,7 +24,7 @@
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 4;
-} 
+}  */
 
 /* .Container{
     background-color: rgb(255, 255, 255);
@@ -159,3 +159,153 @@
     background-color: rgb(80, 193, 163);
     grid-area: footer;
 } */
+
+.Container{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(8, 1fr) ;
+    grid-template-rows: repeat(11, 1fr) ;
+    grid-template-areas: 
+    "Stage-0 Stage-1 Stage-2 Stage-3 Stage-4 Stage-5 Stage-6 Stage-7"
+    "time-1 talk-1 talk-1 talk-4 talk-5 talk-5 talk-9 talk-9"
+    "time-2 talk-1 talk-1 talk-4 break break talk-9 talk-9"
+    "time-3 talk-1 talk-1 talk-4 talk-6 talk-6 talk-9 talk-9"
+    "time-4 break break talk-4 talk-6 talk-6 talk-9 talk-9"
+    "time-5 talk-2 talk-3 talk-3 talk-6 talk-6 talk-9 talk-9"
+    "time-6 talk-2 talk-3 talk-3 talk-6 talk-6 talk-9 talk-9"
+    "time-7 break break break break break break break"
+    "time-8 talk-7 talk-7 break break break talk-10 talk-10"
+    "time-9 talk-7 talk-7 talk-8 talk-8 talk-8 talk-10 talk-10"
+    "time-10 talk-7 talk-7 talk-8 talk-8 talk-8 talk-10 talk-10";  
+}
+.box{
+    
+    background-color: rgb(208, 118, 82);
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+#Stage-0{
+    background-color: rgb(137, 169, 202);
+    grid-area: Stage-0;
+}
+#Stage-1{
+    background-color: rgb(191, 93, 125);
+    grid-area: Stage-1;
+}
+#Stage-2{
+    background-color: rgb(204, 104, 76);
+    grid-area: Stage-2;
+}
+#Stage-3{
+    background-color: rgb(80, 193, 163);
+    grid-area: Stage-3;
+}
+#Stage-4{
+    background-color: rgb(80, 193, 163);
+    grid-area: Stage-4;
+}
+#Stage-5{
+    background-color: rgb(80, 193, 163);
+    grid-area: Stage-5;
+}
+#Stage-6{
+    background-color: rgb(80, 193, 163);
+    grid-area: Stage-6;
+}
+#Stage-7{
+    background-color: rgb(80, 193, 163);
+    grid-area: Stage-7;
+}
+
+
+#time-1{
+    background-color: rgb(80, 193, 163);
+    grid-area: time-1;
+}
+#time-2{
+    background-color: rgb(80, 193, 163);
+    grid-area: time-2;
+}
+#time-3{
+    background-color: rgb(80, 193, 163);
+    grid-area: time-3;
+}
+#time-4{
+    background-color: rgb(80, 193, 163);
+    grid-area: time-4;
+}
+#time-5{
+    background-color: rgb(80, 193, 163);
+    grid-area: time-5;
+}
+#time-6{
+    background-color: rgb(80, 193, 163);
+    grid-area: time-6;
+}
+#time-7{
+    background-color: rgb(80, 193, 163);
+    grid-area: time-7;
+}
+#time-8{
+    background-color: rgb(80, 193, 163);
+    grid-area: time-8;
+}
+#time-9{
+    background-color: rgb(80, 193, 163);
+    grid-area: time-9;
+}
+#time-10{
+    background-color: rgb(80, 193, 163);
+    grid-area: time-10;
+}
+
+#talk-1{
+    background-color: rgb(80, 193, 163);
+    grid-area: talk-1;
+}
+#talk-2{
+    background-color: rgb(80, 193, 163);
+    grid-area: talk-2;
+}
+#talk-3{
+    background-color: rgb(80, 193, 163);
+    grid-area: talk-3;
+}
+#talk-4{
+    background-color: rgb(80, 193, 163);
+    grid-area: talk-4;
+}
+#talk-5{
+    background-color: rgb(80, 193, 163);
+    grid-area: talk-5;
+}
+#talk-6{
+    background-color: rgb(80, 193, 163);
+    grid-area: talk-6;
+}
+#talk-7{
+    background-color: rgb(80, 193, 163);
+    grid-area: talk-7;
+}
+#talk-8{
+    background-color: rgb(80, 193, 163);
+    grid-area: talk-8;
+}
+#talk-9{
+    background-color: rgb(80, 193, 163);
+    grid-area: talk-9;
+}
+#talk-10{
+    background-color: rgb(80, 193, 163);
+    grid-area: talk-10;
+}
+#break{
+    background-color: rgb(80, 193, 163);
+    grid-area: break;
+}
