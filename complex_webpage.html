@@ -1,25 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mrj.com</title>
     <style>
-        table,tr,th,td {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        table,
+        tr,
+        th,
+        td {
             border: 1px solid rgb(73, 78, 76);
 
         }
-        
+
+        #nav-container {
+            width: 100vw;
+            height: 100px;
+            background-color: orange;
+        }
+
+        #nav-container>.navbar>ol{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10vw;
+        }
+        .navbar>ol{
+            background-color: yellow;
+            color: black;
+            list-style: none; 
+            text-decoration: none;
+        }
+        .navbar a{
+            text-decoration: none;
+            font-size: 900;
+            font: bold;
+            color: black;
+            
+        }
     </style>
 </head>
+
 <body>
+    <div id="nav-container">
+        <div class="navbar">
+            <ol>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Our Team">Our Team"</a></li>
+                <li><a href="#Construction package">Construction package</a></li>
+                <li><a href="#Our work">Our work</a></li>
+                <li><a href="#Contact Us">Contact Us</a></li>
+            </ol>
+        </div>
+    </div>
     <h1>MRJ Group Of Construction Company</h1>
     <ol>
         <li><a href="#Home">Home</a></li>
-            <li><a href="#Our Team">Our Team"</a></li>
-            <li><a href="#Construction package">Construction package</a></li>
-           <li><a href="#Our work">Our work</a></li>
-           <li><a href="#Contact Us">Contact Us</a></li>
+        <li><a href="#Our Team">Our Team"</a></li>
+        <li><a href="#Construction package">Construction package</a></li>
+        <li><a href="#Our work">Our work</a></li>
+        <li><a href="#Contact Us">Contact Us</a></li>
     </ol>
     <h2>WE BUILD YOUR 'DREAM HOME'</h2>
     <section>
@@ -30,21 +85,24 @@
         <ul>
             <li>Residential Construction</li>
             <li>Commercial Construction</li>
-           <li>Project Management</li>
-           <li>Architecture & Structure</li>
-           <li>Interior & Smart Home</li>
+            <li>Project Management</li>
+            <li>Architecture & Structure</li>
+            <li>Interior & Smart Home</li>
         </ul>
     </section>
     <section>
-        <img src="https://www.deejos.com/images/pearl-beach/beach-house-by-deejos-2.webp" alt="text" width="250px" height="250px">
-        <img src="https://www.deejos.com/images/pearl-beach/beach-house-by-deejos-5.webp" alt="text" width="250px" height="250px">
-        <img src="https://www.deejos.com/images/pearl-beach/beach-house-by-deejos-8.webp" alt="text" width="250px" height="250px">
+        <img src="https://www.deejos.com/images/pearl-beach/beach-house-by-deejos-2.webp" alt="text" width="250px"
+            height="250px">
+        <img src="https://www.deejos.com/images/pearl-beach/beach-house-by-deejos-5.webp" alt="text" width="250px"
+            height="250px">
+        <img src="https://www.deejos.com/images/pearl-beach/beach-house-by-deejos-8.webp" alt="text" width="250px"
+            height="250px">
 
-        
-      
+
+
     </section><br><br>
     <form action="#">
-        
+
         <label for="Username">Username:</label><br><br>
         <input type="text" id="Username" name="Username" placeholder="Username"><br><br>
         <h3>Gender</h3>
@@ -53,7 +111,7 @@
         <label for="radio">Female</label>
         <input type="radio" id="radio" name="radio"><br><br>
         <h3>Checkboxs</h3>
-        
+
         <input type="checkbox" id="checkbox" name="checkbox">
         <label for="checkbox">Residential Construction</label><br><br>
         <input type="checkbox" id="checkbox" name="checkbox">
@@ -67,41 +125,42 @@
         <input type="submit">
     </form><br><br>
     <table>
-<tr>
-    <th>S.No</th>
-    <th>Sevices</th>
-    <th>concepts</th>
-</tr>
-<tr>
-    <td>1</td>
-    <td>Residential Construction</td>
-    <td>the initial idea for a project or development. </td>
-</tr>
-<tr>
-    <td>2</td>
-    <td>Project Management and Consulting</td>
-    <td>the initial idea for a project or development. </td>
-</tr><tr>
-    <td>3</td>
-    <td>Commercial Construction</td>
-    <td>the initial idea for a project or development. </td>
-</tr>
+        <tr>
+            <th>S.No</th>
+            <th>Sevices</th>
+            <th>concepts</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Residential Construction</td>
+            <td>the initial idea for a project or development. </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Project Management and Consulting</td>
+            <td>the initial idea for a project or development. </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Commercial Construction</td>
+            <td>the initial idea for a project or development. </td>
+        </tr>
 
     </table>
-    
+
     <h3>Contact Us </h3>
     <p>Mobile.No: <a href="tel:0987654321">0987654321</a></p>
     <p>Email Address: <a href="mailto:mohdmeraj6068@gmail.com"> mohdmeraj6068@gmail.com</a></p>
 
     <div>
-            <h2><u>Footer</u></h2>
-            <a href="#">Home</a> &nbsp;&nbsp;
-            <a href="#">Our Team</a> &nbsp;&nbsp;
-            <a href="#">Construction package</a> &nbsp;&nbsp;
-            <a href="#">Contact Us</a> &nbsp;&nbsp;
-           
-            <p>Copyright © 2023 MRJ Group.All rights reserved.</p>
-           
-        </div>
+        <h2><u>Footer</u></h2>
+        <a href="#">Home</a> &nbsp;&nbsp;
+        <a href="#">Our Team</a> &nbsp;&nbsp;
+        <a href="#">Construction package</a> &nbsp;&nbsp;
+        <a href="#">Contact Us</a> &nbsp;&nbsp;
+
+        <p>Copyright © 2023 MRJ Group.All rights reserved.</p>
+
+    </div>
 </body>
 <h2>this is heading
