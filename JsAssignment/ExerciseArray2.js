@@ -8,12 +8,12 @@
 
 // console.log(ShoppingCart)
 
-var countries = ['London', 'Japan', 'Germany', 'Canada']
+// var countries = ['London', 'Japan', 'Germany', 'Canada']
 
-if(countries.includes('India')){
-    console.log('India')
-}
-else{
-    countries.push('India')
-    console.log(countries)
-}
+// if(countries.includes('India')){
+//     console.log('India')
+// }
+// else{
+//     countries.push('India')
+//     console.log(countries)
+// }
