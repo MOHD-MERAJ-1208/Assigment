@@ -34,7 +34,7 @@
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------//
 
-var itCompanies =["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+// var itCompanies =["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
 
 // console.log(itCompanies)
 
@@ -58,3 +58,6 @@ var itCompanies =["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "
 // var store = itCompanies.pop()
 // console.log(itCompanies)
 // console.log(itCompanies.join(),"and",store, "Are Big IT Companies.")
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------------//
+
