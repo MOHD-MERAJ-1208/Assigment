@@ -37,7 +37,7 @@ console.log("Sum of all ages is : ", avg)
 
             //  I tried to solve using below method
 // var ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
-// var sum = 0
+
 // for(var i=0; i<=ages.length-1; i++){
 //     sum += ages[i]
 // }
@@ -47,26 +47,25 @@ console.log("Sum of all ages is : ", avg)
 
     // --------------------------------------------------------------
 // iv)
-
-// console.log("Range of all the ages is : ", (max-min))
+console.log("Range of all the ages is : ", (max-min))
     // --------------------------------------------------------------
 // v)
-// console.log("Comparing the values of min-average: ", Math.round(Math.abs(min-avg)))
-// console.log("Comparing the values of max-average: ", Math.round(max-avg))
+console.log("Comparing the values of min-average: ", Math.round(Math.abs(min-avg)))
+console.log("Comparing the values of max-average: ", Math.round(max-avg))
 
 
 // ----------------------------------------------------------------------------------------------------
 
-// var game = ['Apple', 'Banana', 'pet', 'it', 'chickoo']
+var game = ['Apple', 'Banana', 'pet', 'it', 'chickoo']
 
-// for(var i=0; i<=length-1; i++){
-//     if(game[i].length > 3){
-//         var arr = []
-//         console.log(arr.push(game[i]))
-//         // console.log(game[i])
-//         // console.log(arr)
-//     }
-//     else{
-//         console.log("not found")
-//     }
-// }
+for(var i=0; i<=length-1; i++){
+    if(game[i].length > 3){
+        var arr = []
+        console.log(arr.push(game[i]))
+        console.log(game[i])
+        console.log(arr)
+    }
+    else{
+        console.log("not found")
+    }
+}
