@@ -1,13 +1,13 @@
 //--------------------------------------------------------------------ExerciseConditionals-1--------------------------------------------------------------//
 
-// var a = 230
-// var b = 10
-// if(a>b){
-//     console.log("a is greater than b")
-// }
-// else{
-//     console.log("a is less than b")
-// }
+var a = 230
+var b = 10
+if(a>b){
+    console.log("a is greater than b")
+}
+else{
+    console.log("a is less than b")
+}
 
 
 // var num = prompt('Enter a number:');
@@ -30,49 +30,49 @@
 // }
 
 
-var a=3
-var b=20
-var c=54
+// var a=3
+// var b=20
+// var c=54
 
-if (a>b && a>c) {
-    console.log("a is the Largest")
-}
-else{
+// if (a>b && a>c) {
+//     console.log("a is the Largest")
+// }
+// else{
     
-}
+// }
 
 //--------------------------------------------------------------------ExerciseConditionals-2--------------------------------------------------------------//
 
-// var obj = {
-//     admin : ['create','update','delete'],
-//     user : ['Update','remove'],
-//     guest :['remove','update']
-// }
+var obj = {
+    admin : ['create','update','delete'],
+    user : ['Update','remove'],
+    guest :['remove','update']
+}
 
-// function checkPermission(userRole) {
-//     if (userRole == obj.admin ) {
-//        console.log(obj.admin) 
-//     }
-//     else if(userRole == obj.user){
-//         console.log(obj.user) 
-//     }
-//     else{
-//         console.log(obj.guest)
-//     }
-// }
+function checkPermission(userRole) {
+    if (userRole == obj.admin ) {
+       console.log(obj.admin) 
+    }
+    else if(userRole == obj.user){
+        console.log(obj.user) 
+    }
+    else{
+        console.log(obj.guest)
+    }
+}
 
-// checkPermission(obj.user)
+checkPermission(obj.user)
 
 
-// function calculateDiscountPrice(price) {
-//    if (price>=50) {
-//       var discount = (10 * price)/100
-//       var Totalprice = price - discount
-//       console.log(Totalprice) 
-//    }
-//    else{
-//     console.log("No Discount is Applied.\n your Total Price Is: ", price)
-//    }
+function calculateDiscountPrice(price) {
+   if (price>=50) {
+      var discount = (10 * price)/100
+      var Totalprice = price - discount
+      console.log(Totalprice) 
+   }
+   else{
+    console.log("No Discount is Applied.\n your Total Price Is: ", price)
+   }
     
-// }
-// calculateDiscountPrice(30)
+}
+calculateDiscountPrice(30)
