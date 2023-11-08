@@ -3,31 +3,28 @@ console.log("array of numbers ",arr)
 var arr1 = arr.reduce((sum,num)=>{
     return sum + num;
 })
-
 console.log("Sum of numbers ",arr1);
 
-var arr2 = ['Hello','How','Are','You','Iam','Fine']
+var arr2 = ['Hello!','How','Are','You?']
 console.log(arr2)
 var arr3 = arr2.reduce((p,n)=>{
      return p + n;
-
 })
-
 console.log(arr3);
 
 
 var arr4 = [
     {
         product:'bucket',
-        Price:100
-    },
-    {
-        product:'belt',
         Price:300
     },
     {
+        product:'belt',
+        Price:700
+    },
+    {
         product:'T-Shirt',
-        Price:200
+        Price:500
     },
     {
         product:'Shoes',
@@ -35,12 +32,11 @@ var arr4 = [
     },
     {
         product:'Jeans',
-        Price:1000
+        Price:2000
     }
 ]
 
 var arr5 = arr4.reduce((sum,n)=> sum + n.Price,0)
-
 console.log("sum of all prices ",arr5);
 
 // var temp = 1;
@@ -84,4 +80,4 @@ c.type == "credit"?p+c.amount:p-c.amount
 ,0)
 
 console.log("Remaining Total amount after debited ",arr7);
-console.log(object);
+// console.log(object);
