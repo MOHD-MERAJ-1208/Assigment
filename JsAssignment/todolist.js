@@ -1,5 +1,4 @@
-let Title = document.querySelector('input[placeholder="Title"]')
-let Desc = document.querySelector('input[placeholder="Desc"]')
+let AddNewTask = document.querySelector('input[placeholder="Add New Task"]')
 let btn = document.querySelector('#btn')
 let div = document.querySelector('.div1')
 // console.log(div)
@@ -8,14 +7,9 @@ let div = document.querySelector('.div1')
 btn.addEventListener('click',(e)=>{
     console.log('hello from button')
     // console.log(Title.value)
-    const inputTitleValue = Title.value;
-    const inputDescValue = Desc.value;
-    console.log(inputTitleValue,inputDescValue)
-    Title.value = ''
-    Desc.value = ''
-     div.innerHTML = `
-      <p>${inputTitleValue}</p>
-      <p>${inputDescValue}</p>
-      <button>delete</button>
-      <button>edit</button>`
+    const inputTitleValue = AddNewTask.value;
+    console.log(inputTitleValue)
+    AddNewTask.value = ''
+     div.innerHTML += `
+      <p>${inputTitleValue}</p>`
 })
