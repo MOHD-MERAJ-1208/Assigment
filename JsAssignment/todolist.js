@@ -11,5 +11,5 @@ btn.addEventListener('click',(e)=>{
     console.log(inputTitleValue)
     AddNewTask.value = ''
      div.innerHTML += `
-      <p>${inputTitleValue}</p>`
+      <p style="color:white">${inputTitleValue}</p>`
 })
