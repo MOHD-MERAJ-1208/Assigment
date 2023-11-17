@@ -14,7 +14,8 @@
 // })
 
 // Question2
-// let btn = document.querySelector('#btn')
+// let btn = document.querySelector('#btn');
+// let display=document.querySelector(".display");
 
 // btn.addEventListener('click', function(e){
 //     // console.log("clicked")
@@ -29,6 +30,12 @@
 //             return obj;
 //         })
 //         console.log(newData)
+//         let c=newData.map((el)=>{
+//             return `<li>${el.name}</li>`
+//         })
+//         display.innerHTML=`<ol type="i">${c.join("")}</ol>`
+//         console.log(c)
+       
 //     }
 //     data.open('GET',"https://dummyjson.com/products");
 //     data.send();
@@ -38,24 +45,63 @@
 
 
 //Question4Dynamic
-function callApi(url){
-    let data=new XMLHttpRequest();
-    // console.log(data);
-    data.onload=function(){
-        let Data=JSON.parse(data.response);
-        //  console.log(Data.products[0].title);
+
+// function callApi(url){
+//     let data=new XMLHttpRequest();
+//     // console.log(data);
+//     data.onload=function(){
+//         let Data=JSON.parse(data.response);
+//         //  console.log(Data.products[0].title);
         
-        console.log(Data)
-    }
-    data.open('GET',url);
-    data.send();
-}
+//         console.log(Data)
+//     }
+//     data.open('GET',url);
+//     data.send();
+// }
+// let btn = document.querySelector('#btn')
+// let input=document.querySelector(".inp");
+
+// btn.addEventListener('click', function(e){
+//     // console.log("clicked")
+//     callApi(`https://dummyjson.com/products/${input.value}`);
+    
+// })
+
+
+//question5
+
 let btn = document.querySelector('#btn')
-let input=document.querySelector(".inp");
+let display=document.querySelector(".display");
+let isTrue=true;
+function DisplayIndicator(){
+    if(isTrue){
+        display.innerHTML='API Loading'
+        isTrue=false;
+    }
+    else{
+        display.innerHTML=null;
+    }
+}
 
 btn.addEventListener('click', function(e){
     // console.log("clicked")
-    callApi(`https://dummyjson.com/products/${input.value}`);
+    let data=new XMLHttpRequest();
+    // console.log(data);
     
+    data.onprogress=function(){
+        // console.log("response")
+        // console.log(data.response)
+         DisplayIndicator()
+        // console.log('loading')
+    }
+    data.onload=function(){
+        // DisplayIndicator();  
+        setTimeout(DisplayIndicator,900)
+        console.log(data.response);
+    }
+    data.open('GET',"https://dummyjson.com/products");
+    data.send();
 })
+
+
 
