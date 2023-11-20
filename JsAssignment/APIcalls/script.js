@@ -84,18 +84,15 @@ function DisplayIndicator(){
 }
 
 btn.addEventListener('click', function(e){
-    // console.log("clicked")
+
     let data=new XMLHttpRequest();
     // console.log(data);
-    
+
     data.onprogress=function(){
-        // console.log("response")
-        // console.log(data.response)
          DisplayIndicator()
-        // console.log('loading')
+
     }
     data.onload=function(){
-        // DisplayIndicator();  
         setTimeout(DisplayIndicator,900)
         console.log(data.response);
     }
