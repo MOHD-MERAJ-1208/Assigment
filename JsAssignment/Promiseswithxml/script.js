@@ -67,35 +67,71 @@
 //     console.log(err)
 // })
 
-//Question 5
+// //Question 5
+// let table = document.querySelector('tbody')
+// fetch('https://restcountries.com/v2/all').then((countries)=>{
+//     // console.log(resdata)
+//     return countries.json();
+// }).then((resdatasjson)=>{
 
+//   let arr=resdatasjson.map(e => {
+//     let item=`<tr>
+//     <td>${e.name}</td>
+//     <td>${e.capital}</td>
+//     <td>${e.languages[0].name}</td>
+//     <td>${e.population}</td>
+//   </tr>`
+//   return item;
+//   });
+//   table.innerHTML=arr.join("");
+//   console.log(resdatasjson)
+//   console.log(resdatasjson[0].name)
+//   console.log(resdatasjson[0].capital)
+//   console.log(resdatasjson[0].languages[0].name)
+//   console.log(resdatasjson[0].population)
+// }).catch((err)=>{
+//     console.log(err)
+// })
+
+//Question 6
+
+let btn = document.querySelector("#btn")
 let table = document.querySelector('tbody')
 
-fetch('https://restcountries.com/v2/all').then((countries)=>{
-    // console.log(resdata)
-    return countries.json();
-}).then((resdatasjson)=>{
-
-  let arr=resdatasjson.map(e => {
-    let item=`<tr>
-    <td>${e.name}</td>
-    <td>${e.capital}</td>
-    <td>${e.languages[0].name}</td>
-    <td>${e.population}</td>
-  </tr>`
-  return item;
-  });
-
-  table.innerHTML=arr.join("");
-  console.log(resdatasjson)
-  console.log(resdatasjson[0].name)
-  console.log(resdatasjson[0].capital)
-  console.log(resdatasjson[0].languages[0].name)
-  console.log(resdatasjson[0].population)
-}).catch((err)=>{
-    console.log(err)
+btn.addEventListener('click', function(e) {
+    console.log("uyguj")
+    fetch('https://restcountries.com/v2/all').then((countries)=>{
+      // console.log(resdata)
+      return countries.json();
+  }).then((resdatasjson)=>{
+    // console.log(resdatasjson)
+   let c=resdatasjson.sort((a,b)=>{
+    return b.area-a.area;
+   })
+   let arr2=[]
+   for(let i=0;i<10;i++){
+     let item=`<tr>
+     <td>${c[i].name}</td>
+ 
+   </tr>`
+   arr2.push(item)
+   }
+   console.log(arr2)
+  table.innerHTML=arr2.join('')
+  // console.log(arr)
+  // console.log(arr1)
+  
+    }).catch((err)=>{
+      console.log(err)
+  })
+  
+    
 })
 
 
 
+// const points = [40, 100, 1, 5, 25, 10];
+// document.getElementById("demo1").innerHTML = points;
 
+// points.sort(function(a, b){return b - a});
+// document.getElementById("demo2").innerHTML = points;
