@@ -93,7 +93,37 @@
 //     console.log(err)
 // })
 
-//Question 6
+// //Question 6
+
+// let btn = document.querySelector("#btn")
+// let table = document.querySelector('tbody')
+
+// btn.addEventListener('click', function(e) {
+//     console.log("uyguj")
+//     fetch('https://restcountries.com/v2/all').then((countries)=>{
+//       // console.log(resdata)
+//       return countries.json();
+//   }).then((resdatasjson)=>{
+//     // console.log(resdatasjson)
+//    let c=resdatasjson.sort((a,b)=>{
+//     return b.area-a.area;
+//    })
+//    let arr2=[]
+//    for(let i=0;i<10;i++){
+//      let item=`<tr><td>${c[i].name}</td></tr>`
+//      arr2.push(item)
+//    }
+//    console.log(arr2)
+//   table.innerHTML=arr2.join('') 
+//     }).catch((err)=>{
+//       console.log(err)
+//   })
+  
+    
+// })
+
+
+//Question 7
 
 let btn = document.querySelector("#btn")
 let table = document.querySelector('tbody')
@@ -110,17 +140,11 @@ btn.addEventListener('click', function(e) {
    })
    let arr2=[]
    for(let i=0;i<10;i++){
-     let item=`<tr>
-     <td>${c[i].name}</td>
- 
-   </tr>`
-   arr2.push(item)
+     let item=`<tr><td>${c[i].languages[0].name}</td></tr>`
+     arr2.push(item)
    }
    console.log(arr2)
-  table.innerHTML=arr2.join('')
-  // console.log(arr)
-  // console.log(arr1)
-  
+  table.innerHTML=arr2.join('') 
     }).catch((err)=>{
       console.log(err)
   })
@@ -128,10 +152,3 @@ btn.addEventListener('click', function(e) {
     
 })
 
-
-
-// const points = [40, 100, 1, 5, 25, 10];
-// document.getElementById("demo1").innerHTML = points;
-
-// points.sort(function(a, b){return b - a});
-// document.getElementById("demo2").innerHTML = points;
