@@ -53,11 +53,40 @@
 
 //Question 4
 
+// fetch('https://restcountries.com/v2/all').then((countries)=>{
+//     // console.log(resdata)
+//     return countries.json();
+// }).then((resdatasjson)=>{
+
+//   console.log(resdatasjson)
+//   console.log(resdatasjson[0].name)
+//   console.log(resdatasjson[0].capital)
+//   console.log(resdatasjson[0].languages[0].name)
+//   console.log(resdatasjson[0].population)
+// }).catch((err)=>{
+//     console.log(err)
+// })
+
+//Question 5
+
+let table = document.querySelector('tbody')
+
 fetch('https://restcountries.com/v2/all').then((countries)=>{
     // console.log(resdata)
     return countries.json();
 }).then((resdatasjson)=>{
 
+  let arr=resdatasjson.map(e => {
+    let item=`<tr>
+    <td>${e.name}</td>
+    <td>${e.capital}</td>
+    <td>${e.languages[0].name}</td>
+    <td>${e.population}</td>
+  </tr>`
+  return item;
+  });
+
+  table.innerHTML=arr.join("");
   console.log(resdatasjson)
   console.log(resdatasjson[0].name)
   console.log(resdatasjson[0].capital)
@@ -66,3 +95,7 @@ fetch('https://restcountries.com/v2/all').then((countries)=>{
 }).catch((err)=>{
     console.log(err)
 })
+
+
+
+
