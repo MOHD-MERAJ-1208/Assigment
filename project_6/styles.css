@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:orange;
+    color: white;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-section {
+    background-color: #f4f4f4;
+    padding: 2em;
+    text-align: center;
+}
+
+.offer-card {
+    background-color: #3498db;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    width: 200px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.footer-links a {
+    margin-right: 1em;
+    color:darkolivegreen;
+    text-decoration: none;
+    
+}

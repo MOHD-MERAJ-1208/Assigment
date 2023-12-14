@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;background-color: lightgray;
+}
+
+header {
+    background-color:#2874f0;
+    color: white;
+    padding: 1em;
+   justify-content: center;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.nav-links li {
+    margin-right: 1em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    
+    
+  } */

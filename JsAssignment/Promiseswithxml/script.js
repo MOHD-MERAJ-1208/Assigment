@@ -18,6 +18,10 @@
 //         }
 //     }
 //     })
+
+
+
+
 //     data.open('GET',url);
 //     data.send();
 //     return promise;
@@ -148,7 +152,5 @@ btn.addEventListener('click', function(e) {
     }).catch((err)=>{
       console.log(err)
   })
-  
-    
 })
 
